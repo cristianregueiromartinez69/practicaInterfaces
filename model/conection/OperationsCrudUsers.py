@@ -1,9 +1,10 @@
 from DatabaseConection import *
 
-from OperationsCreateTablesDB import cursor, createUsuarios, createCoches, createMotos, createBicicletas, borrar
+from OperationsCreateTablesDB import  createUsuarios, createCoches, createMotos, createBicicletas, dropTables, create_table
 
-borrar()
-createUsuarios()
-createCoches()
-createMotos()
-createBicicletas()
+
+dropTables()
+create_table(createUsuarios())
+create_table(createCoches())
+create_table(createMotos())
+create_table(createBicicletas())
