@@ -3,7 +3,8 @@ from sqlite3 import DatabaseError, OperationalError
 
 
 def getConecction():
-    bbdd = dbapi.connect("alquiler.dat")
+    bbdd = dbapi.connect("../alquiler.dat")
     return bbdd
 
-getConecction()
+
+
